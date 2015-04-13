@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AC06045-E61A-40CB-975B-E8D6B8C7F933}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>test1</RootNamespace>
+    <AssemblyName>test1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addcategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcategory.Designer.cs">
+      <DependentUpon>addcategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addsanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addsanpham.Designer.cs">
+      <DependentUpon>Addsanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaikhoan.Designer.cs">
+      <DependentUpon>FormTaikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fromcategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fromcategory.Designer.cs">
+      <DependentUpon>fromcategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromKhachHang.Designer.cs">
+      <DependentUpon>FromKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frommain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frommain.Designer.cs">
+      <DependentUpon>frommain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromSanPham.Designer.cs">
+      <DependentUpon>FromSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ketnoi.cs" />
+    <Compile Include="category.cs" />
+    <Compile Include="KhachHang.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="roles.cs" />
+    <Compile Include="Sanpham.cs" />
+    <Compile Include="taikhoan.cs" />
+    <Compile Include="updatecategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatecategory.Designer.cs">
+      <DependentUpon>updatecategory.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addcategory.resx">
+      <DependentUpon>addcategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addsanpham.resx">
+      <DependentUpon>Addsanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaikhoan.resx">
+      <DependentUpon>FormTaikhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fromcategory.resx">
+      <DependentUpon>fromcategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromKhachHang.resx">
+      <DependentUpon>FromKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frommain.resx">
+      <DependentUpon>frommain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromSanPham.resx">
+      <DependentUpon>FromSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="updatecategory.resx">
+      <DependentUpon>updatecategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\login_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Add-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
